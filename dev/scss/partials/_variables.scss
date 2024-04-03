@@ -1,12 +1,22 @@
 // --------------------------------------------------
 // colours
 
-$color-black:                   #000;
-$color-grey:                    #ccc;
+$color-black:                   #242424;
+$color-grey:                    #757575;
 $color-white:                   #fff;
+$color-red:                     #c93022;
 
-// links
+// fonts
+$font-heading:                  'Right Grotesk', sans-serif;
+$font-body:                     'Poppins', sans-serif;
 
-$link-color:                    $color-black;
-$link-hover-color:              lighten($link-color, 5);
-$link-active-color:             lighten($link-color, 10);
+// font-size
+$base-font-size:                1rem;
+$base-font-size-sm:             $base-font-size * 0.75;
+$base-font-size-lg:             $base-font-size * 1.25;
+$base-font-size-xl:             $base-font-size * 1.5;
+$base-font-size-xxl:            $base-font-size * 2;
+
+// spacing
+$base-padding:                  0.75rem;
+$base-margin:                   0.75rem;

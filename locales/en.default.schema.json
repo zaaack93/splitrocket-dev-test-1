@@ -712,6 +712,12 @@
         "name": "Blog posts"
       }
     },
+    "products-list": {
+      "name:": "Products list",
+      "presets": {
+        "name": "Products list"
+      }
+    },
     "featured-collection": {
       "name": "Featured collection",
       "settings": {
