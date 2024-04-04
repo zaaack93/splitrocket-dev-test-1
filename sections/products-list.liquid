@@ -3,49 +3,45 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 {{ 'main.css' | asset_url | stylesheet_tag }}
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script> {% comment %} Include the Swiper JS with defer attribute {% endcomment %}
+<script src="{{ 'swiper-slider.js' | asset_url }}" defer="defer"></script> {% comment %} Include the Swiper slider JS with defer attribute {% endcomment %}
 
-
-<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'swiper-slider.js' | asset_url }}" defer="defer"></script>
-
-{%- style -%}
+{%- style -%} {% comment %} Start of inline CSS {% endcomment %}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; {% comment %} Set the top padding for the section {% endcomment %}
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; {% comment %} Set the bottom padding for the section {% endcomment %}
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 750px) { {% comment %} Media query for screens larger than 750px {% endcomment %}
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px; {% comment %} Set the top padding for the section {% endcomment %}
+      padding-bottom: {{ section.settings.padding_bottom }}px; {% comment %} Set the bottom padding for the section {% endcomment %}
     }
   }
-{%- endstyle -%}
+{%- endstyle -%} {% comment %} End of inline CSS {% endcomment %}
 
-
-<div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+{% comment %} Start of the collection section {% endcomment %}
+<div class="collection section-{{ section.id }}-padding"> 
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width">
           {%- if section.settings.collection != blank -%}
             <h2 class="collection__title--heading inline-richtext">
-              {{ section.settings.collection .title }}
+              {{ section.settings.collection .title }} {% comment %} Display the collection title {% endcomment %}
             </h2>
           {%- endif -%}
     </div>
     <div class="collection__list">
-      <swiper-component class="carousel__container swiper">
+      <swiper-component class="carousel__container swiper"> {% comment %} Start of the Swiper component {% endcomment %}
         <div class="swiper-wrapper">
-          {%- for product in section.settings.collection.products -%}
+          {%- for product in section.settings.collection.products -%} {% comment %} Loop through each product in the collection {% endcomment %}
               <div
-                  id="Slide-{{ section.id }}-{{ forloop.index }}"
                   class="carousel__slide swiper-slide"
                   {% if settings.animations_reveal_on_scroll %}
                       data-cascade
-                      style="--animation-order: {{ forloop.index }};"
+                      style="--animation-order: {{ forloop.index }};" 
                   {% endif %}
               >
-                  {% render 'card-product-customized',
+                  {% render 'card-product-customized', {% comment %} Render the customized product card {% endcomment %}
                       card_product: product,
                       media_aspect_ratio: "square",
                       section_id: section.id
@@ -53,12 +49,14 @@
               </div>
           {%- endfor -%}
         </div>
-     </swiper-component>
-     <div class="swiper-button-next swiper-navigation__button">{{ 'slider-arrow-right.svg'  |  asset_url |  img_tag  }}</div>
-     <div class="swiper-button-prev swiper-navigation__button">{{ 'slider-arrow-left.svg'  |  asset_url |   img_tag  }}</div>
+     </swiper-component> {% comment %} End of the Swiper component {% endcomment %}
+     <div class="swiper-button-next swiper-navigation__button">{{ 'slider-arrow-right.svg'  |  asset_url |  img_tag  }}</div> {% comment %} Swiper next button {% endcomment %}
+     <div class="swiper-button-prev swiper-navigation__button">{{ 'slider-arrow-left.svg'  |  asset_url |   img_tag  }}</div> {% comment %} Swiper previous button {% endcomment %}
     </div>
-</div>
+</div> 
+{% comment %} End of the collection section {% endcomment %}
 
+{% comment %} Start of the schema {% endcomment %}
 {% schema %}
 {
   "name": "t:sections.products-list.name",
@@ -72,12 +70,6 @@
       "type": "collection",
       "id": "collection",
       "label": "t:sections.featured-collection.settings.collection.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "t:sections.featured-collection.settings.full_width.label",
-      "default": false
     },
     {
       "type": "header",
@@ -110,4 +102,4 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %} {% comment %} End of the schema {% endcomment %}

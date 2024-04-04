@@ -9,3 +9,23 @@
   font-display: swap;
   font-style: normal;
 }
+
+//  breakpoints mixin
+@mixin respond-to($media) {
+  @if $media == small {
+      @media screen and (max-width: 749px) { @content; }
+  } @else if $media == medium {
+      @media screen and (min-width: 750px) and (max-width: 1023px) { @content; }
+  } @else if $media == large {
+      @media screen and (min-width: 1024px) { @content; }
+  }
+}
+
+// text styles mixin
+@mixin text-style($font-family, $font-size, $line-height, $font-weight, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
