@@ -43,59 +43,97 @@
   letter-spacing: normal;
   margin: 0;
   text-transform: uppercase; }
+  @media screen and (max-width: 749px) {
+    .section-list-products .collection__title .collection__title--heading {
+      font-size: 36px;
+      line-height: 18px; } }
 
 .section-list-products .collection__title.title-wrapper {
   margin-bottom: 60px; }
+  @media screen and (max-width: 749px) {
+    .section-list-products .collection__title.title-wrapper {
+      margin-bottom: 30px; } }
 
-.section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%); }
-  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge {
-    font-family: "Right grotesk tight", sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    border-radius: 0px;
-    padding: 6px 16px;
-    color: #fff; }
-    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-grey {
-      background-color: #757575; }
-    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-red {
-      background-color: #c93022; }
-    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-black {
-      background-color: #242424; }
-
-.section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information {
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
-  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card__heading {
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 600;
-    text-align: center;
-    color: #242424;
-    text-transform: uppercase; }
-  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 600;
-    text-align: center;
-    color: #242424; }
-    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price {
-      margin-top: 10px; }
-      .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--regular {
-        color: inherit;
-        font-size: inherit;
-        line-height: inherit;
-        font-family: inherit; }
-      .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--sale {
-        color: #c93022; }
-
-.section-list-products .carousel__container .swiper-navigation__button::after {
-  display: none; }
+.section-list-products .collection__list {
+  position: relative; }
+  @media screen and (max-width: 749px) {
+    .section-list-products .collection__list {
+      padding: 0 1.5rem; } }
+  @media screen and (min-width: 750px) and (max-width: 1023px) {
+    .section-list-products .collection__list {
+      padding: 0 5rem; } }
+  @media screen and (min-width: 1024px) {
+    .section-list-products .collection__list {
+      --desktop-margin-left-first-item: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
+      margin-left: var(--desktop-margin-left-first-item);
+      scroll-margin-left: var(--desktop-margin-left-first-item); } }
+  .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge {
+      font-family: "Right grotesk tight", sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      border-radius: 0px;
+      padding: 4px 16px 6px;
+      color: #fff; }
+      @media screen and (max-width: 749px) {
+        .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge {
+          font-size: 20px;
+          line-height: 20px; } }
+      .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-grey {
+        background-color: #757575; }
+      .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-red {
+        background-color: #c93022; }
+      .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-black {
+        background-color: #242424; }
+  .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information {
+    padding-bottom: 3rem;
+    padding-top: 3rem; }
+    .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card__heading {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      text-align: center;
+      color: #242424;
+      text-transform: uppercase; }
+      @media screen and (max-width: 749px) {
+        .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card__heading {
+          font-size: 18px;
+          line-height: 24px; } }
+    .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      text-align: center;
+      color: #242424; }
+      @media screen and (max-width: 749px) {
+        .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
+          font-size: 18px;
+          line-height: 24px; } }
+      .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price {
+        margin-top: 10px; }
+        .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--regular {
+          color: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          font-family: inherit; }
+        .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--sale {
+          color: #c93022; }
+  .section-list-products .collection__list .swiper-navigation__button {
+    top: 37%; }
+    .section-list-products .collection__list .swiper-navigation__button::after {
+      display: none; }
+    @media screen and (min-width: 1024px) {
+      .section-list-products .collection__list .swiper-navigation__button.swiper-button-prev {
+        left: -40px; } }
+    @media screen and (min-width: 1024px) {
+      .section-list-products .collection__list .swiper-navigation__button.swiper-button-next {
+        right: 40px; } }
