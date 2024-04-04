@@ -77,7 +77,8 @@
     line-height: 36px;
     font-weight: 600;
     text-align: center;
-    color: #242424; }
+    color: #242424;
+    text-transform: uppercase; }
   .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
@@ -94,3 +95,6 @@
         font-family: inherit; }
       .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--sale {
         color: #c93022; }
+
+.section-list-products .carousel__container .swiper-navigation__button::after {
+  display: none; }

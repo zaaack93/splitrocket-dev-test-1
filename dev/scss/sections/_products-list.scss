@@ -60,6 +60,7 @@
                             font-weight: 600;
                             text-align: center;
                             color:$color-black;
+                            text-transform: uppercase;
                         }
                         .card-information{
                             font-family: $font-body;
@@ -87,6 +88,13 @@
                         }
                     }
                 }
+            }
+        }
+
+        //swiper navigation buttons
+        .swiper-navigation__button{
+            &::after{
+                display: none;
             }
         }
     }

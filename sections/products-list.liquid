@@ -25,12 +25,11 @@
 {%- endstyle -%}
 
 
-<div class="color-{{ section.settings.color_scheme }} isolate gradient">
-  <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+<div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width">
-          {%- if section.settings.title != blank -%}
+          {%- if section.settings.collection != blank -%}
             <h2 class="collection__title--heading inline-richtext">
-              {{ section.settings.title }}
+              {{ section.settings.collection .title }}
             </h2>
           {%- endif -%}
     </div>
@@ -54,11 +53,10 @@
               </div>
           {%- endfor -%}
         </div>
+        <div class="swiper-button-next swiper-navigation__button">{{ 'slider-arrow-right.svg'  |  asset_url |  img_tag  }}</div>
+        <div class="swiper-button-prev swiper-navigation__button">{{ 'slider-arrow-left.svg'  |  asset_url |   img_tag  }}</div>
      </swiper-component>
-     <div class="swiper-button-next swiper-navigation__button"></div>
-     <div class="swiper-button-prev swiper-navigation__button"></div>
     </div>
-  </div>
 </div>
 
 {% schema %}
