@@ -22,10 +22,11 @@
 }
 
 // text styles mixin
-@mixin text-style($font-family, $font-size, $line-height, $font-weight, $color) {
+@mixin text-style($font-family, $font-size, $line-height, $font-weight, $color,$letter-spacing: 0) {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
   color: $color;
+  letter-spacing: $letter-spacing;
 }

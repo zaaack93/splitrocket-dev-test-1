@@ -40,6 +40,7 @@
   line-height: 36px;
   font-weight: 700;
   color: #242424;
+  letter-spacing: 0;
   text-transform: uppercase;
   margin: 0; }
   @media screen and (max-width: 749px) {
@@ -48,7 +49,8 @@
       font-size: 36px;
       line-height: 18px;
       font-weight: 700;
-      color: #242424; } }
+      color: #242424;
+      letter-spacing: 0; } }
 
 .section-list-products .collection__title.title-wrapper {
   margin-bottom: 60px; }
@@ -81,6 +83,7 @@
       line-height: 24px;
       font-weight: 900;
       color: #fff;
+      letter-spacing: 0;
       text-transform: uppercase;
       border-radius: 0px;
       padding: 4px 16px 6px; }
@@ -90,7 +93,8 @@
           font-size: 20px;
           line-height: 20px;
           font-weight: 900;
-          color: #fff; } }
+          color: #fff;
+          letter-spacing: 0; } }
       .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-grey {
         background-color: #757575; }
       .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-red {
@@ -106,6 +110,7 @@
       line-height: 36px;
       font-weight: 600;
       color: #242424;
+      letter-spacing: 0;
       text-align: center;
       text-transform: uppercase; }
       @media screen and (max-width: 749px) {
@@ -114,13 +119,15 @@
           font-size: 18px;
           line-height: 24px;
           font-weight: 600;
-          color: #242424; } }
+          color: #242424;
+          letter-spacing: 0; } }
     .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
       font-family: "Poppins", sans-serif;
       font-size: 24px;
       line-height: 36px;
       font-weight: 600;
       color: #242424;
+      letter-spacing: 0;
       text-align: center; }
       @media screen and (max-width: 749px) {
         .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
@@ -128,7 +135,8 @@
           font-size: 18px;
           line-height: 24px;
           font-weight: 600;
-          color: #242424; } }
+          color: #242424;
+          letter-spacing: 0; } }
       .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price {
         margin-top: 10px; }
         .section-list-products .collection__list .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--regular {
