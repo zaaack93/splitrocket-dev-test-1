@@ -1,0 +1,24 @@
+// Define a map with your font data
+$fonts: (
+  "Right grotesk": (
+    "RightGrotesk-Medium": 500,
+    "RightGrotesk-Dark": 700,
+    "RightGrotesk-Black": 900,
+  ),
+  "Right grotesk narrow": (
+    "RightGrotesk-NarrowBlack": 900,
+  ),
+  "Right grotesk tight": (
+    "RightGrotesk-TightBlack": 900,
+  ),
+);
+
+// Loop through the map and generate the @font-face rules
+@each $font-family, $font-weights in $fonts {
+  @each $font-name, $font-weight in $font-weights {
+    @font-face {
+      font-family: "#{$font-family}";
+      @include font-file($font-name, $font-weight);
+    }
+  }
+}

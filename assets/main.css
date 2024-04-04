@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Right grotesk";
+  src: url("RightGrotesk-Medium.woff") format("woff"), url("RightGrotesk-Medium.woff2") format("woff2"), url("RightGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Right grotesk";
+  src: url("RightGrotesk-Dark.woff") format("woff"), url("RightGrotesk-Dark.woff2") format("woff2"), url("RightGrotesk-Dark.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Right grotesk";
+  src: url("RightGrotesk-Black.woff") format("woff"), url("RightGrotesk-Black.woff2") format("woff2"), url("RightGrotesk-Black.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Right grotesk narrow";
+  src: url("RightGrotesk-NarrowBlack.woff") format("woff"), url("RightGrotesk-NarrowBlack.woff2") format("woff2"), url("RightGrotesk-NarrowBlack.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Right grotesk tight";
+  src: url("RightGrotesk-TightBlack.woff") format("woff"), url("RightGrotesk-TightBlack.woff2") format("woff2"), url("RightGrotesk-TightBlack.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal; }
+
+.section-list-products .collection__title .collection__title--heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 62px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #242424;
+  letter-spacing: normal;
+  margin: 0; }
+
+.section-list-products .collection__title.title-wrapper {
+  margin-bottom: 60px; }
+
+.section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge {
+    font-family: "Right grotesk tight", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 6px 16px;
+    color: #fff; }
+    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-grey {
+      background-color: #757575; }
+    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-red {
+      background-color: #c93022; }
+    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__inner .card__content .card__badge .badge.badge-black {
+      background-color: #242424; }
+
+.section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information {
+  padding-bottom: 3rem;
+  padding-top: 3rem; }
+  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card__heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #242424; }
+  .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #242424; }
+    .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price {
+      margin-top: 10px; }
+      .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--regular {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-family: inherit; }
+      .section-list-products .carousel__container .carousel__slide .product-card-wrapper .card__content .card__information .card-information .price.price--on-sale .price__sale .price-item--sale {
+        color: #c93022; }

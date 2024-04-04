@@ -1,0 +1,93 @@
+.section-list-products{
+    .collection__title{
+        .collection__title--heading{
+            font-family: $font-body;
+            font-size: 62px;
+            line-height: 36px;
+            font-weight: 700;
+            color:$color-black;
+            letter-spacing: normal;
+            margin: 0;
+        }
+        &.title-wrapper{
+            margin-bottom: 60px;
+        }
+    }
+
+    .carousel__container{
+        .carousel__slide{
+            .product-card-wrapper{
+                .card__inner{
+                    .card__content{
+                        .card__badge{
+                            position: absolute;
+                            bottom: -18px;
+                            left: 50%;
+                            -webkit-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            .badge{
+                                font-family: $font-heading;
+                                font-weight: 900;
+                                font-size: 24px;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                                border-radius: 0px;
+                                padding: 6px 16px;
+                                color: $color-white;
+                                &.badge-grey{
+                                    background-color: $color-grey;
+                                }
+
+                                &.badge-red{
+                                    background-color: $color-red;
+                                }
+
+                                &.badge-black{
+                                    background-color: $color-black;
+                                }
+                            }
+                        }
+                    }
+                }
+                .card__content{
+                    .card__information{
+                        padding-bottom: 3rem;
+                        padding-top: 3rem;
+                        .card__heading{
+                            font-family: $font-body;
+                            font-size: 24px;
+                            line-height: 36px;
+                            font-weight: 600;
+                            text-align: center;
+                            color:$color-black;
+                        }
+                        .card-information{
+                            font-family: $font-body;
+                            font-size: 24px;
+                            line-height: 36px;
+                            font-weight: 600;
+                            text-align: center;
+                            color:$color-black;
+                            .price{
+                                margin-top: 10px;
+                                &.price--on-sale{
+                                    .price__sale{
+                                        .price-item--regular{
+                                            color: inherit;
+                                            font-size: inherit;
+                                            line-height: inherit;
+                                            font-family: inherit;
+                                        }
+                                        .price-item--sale{
+                                            color:$color-red;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
