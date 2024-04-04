@@ -713,7 +713,7 @@
       }
     },
     "products-list": {
-      "name:": "Products list",
+      "name": "Products list",
       "presets": {
         "name": "Products list"
       }
