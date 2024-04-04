@@ -41,7 +41,8 @@
   font-weight: 700;
   color: #242424;
   letter-spacing: normal;
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
 
 .section-list-products .collection__title.title-wrapper {
   margin-bottom: 60px; }

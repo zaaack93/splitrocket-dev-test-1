@@ -1,6 +1,8 @@
 class SwiperComponent extends HTMLElement {
     constructor() {
       super();
+    this.dataColumnsDesktop = this.getAttribute("data-columns-desktop");
+    this.dataColumnsMobile = this.getAttribute("data-columns-mobile");
     }
   
     connectedCallback() {
@@ -14,7 +16,7 @@ class SwiperComponent extends HTMLElement {
       // Configure Swiper with the retrieved options
       debugger
       const swiperOptions = {
-        slidesPerView: 2.7,
+        slidesPerView: this.dataColumnsDesktop,
         spaceBetween: 30,
         navigation: {
           nextEl: ".swiper-button-next",
