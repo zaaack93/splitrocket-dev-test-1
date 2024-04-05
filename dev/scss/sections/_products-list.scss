@@ -89,11 +89,11 @@
                             }
 
                             .card-information {
-                                @include text-style($font-body, 24px, 36px, 600, $color-black);
+                                @include text-style($font-body, 24px, 36px, 500, $color-black);
                                 text-align: center;
 
                                 @include respond-to(small) {
-                                    @include text-style($font-body, 18px, 24px, 600, $color-black);
+                                    @include text-style($font-body, 18px, 24px, 500, $color-black);
                                 }
 
                                 .price {
